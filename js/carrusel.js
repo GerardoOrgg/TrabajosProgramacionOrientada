@@ -1,22 +1,23 @@
 
 
-let imagenes = ["img/1.png","img/2.png"]
+let imagenes = ["img/0.jpg","img/1.jpg","img/2.jpg","img/3.jpg"]
 
-let indice = imagenes.length;
+let indice = 0;
 
 
 document.getElementById("siguiente").addEventListener("click",()=>{
-    if (indice < 5 ){
+
+    if (indice < 3 ){
         indice++;
-        console.log(indice);
     }
+    console.log(indice)
     document.getElementById("img").setAttribute("src",imagenes[indice]);
 })
 
 document.getElementById("anterior").addEventListener("click",()=>{
     if (indice > 0 ){
         indice--;
-        console.log(indice);
     }
+    console.log(indice)
     document.getElementById("img").setAttribute("src",imagenes[indice]);
 })
