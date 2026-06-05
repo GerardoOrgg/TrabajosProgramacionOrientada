@@ -17,6 +17,7 @@ document.getElementById("siguiente").addEventListener("click",()=>{
 document.getElementById("anterior").addEventListener("click",()=>{
     if (indice > 0 ){
         indice--;
+        let caca;
     }
     console.log(indice)
     document.getElementById("img").setAttribute("src",imagenes[indice]);
